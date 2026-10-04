@@ -1,0 +1,37 @@
+| Distance | Reverse  | Buzzer  |
+| -------- | -------- | ------- |
+| 100 cm   | ✅ Moves  | —       |
+| 50 cm    | ✅ Moves  | —       |
+| 30 cm    | ✅ Moves  | —       |
+| 25 cm    | 🛑 Stops | 🔊 Beep |
+| 20 cm    | 🛑 Stops | 🔊 Beep |
+| 10 cm    | 🛑 Stops | 🔊 Beep |
+
+
+
+             BACK
+              ↓
+        HC-SR04 checks
+              ↓
+       ┌──────┴──────┐
+       ↓             ↓
+    > 25 cm       ≤ 25 cm
+       ↓             ↓
+   REVERSE       MOTOR STOP
+                    +
+                BEEP BEEP
+
+
+
+
+Car reversing
+     ↓
+Object approaches
+     ↓
+Distance ≤ 25 cm
+     ↓
+🛑 Motors STOP
+     +
+🔊 Buzzer BEEPS
+     ↓
+Reverse remains blocked
